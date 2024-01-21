@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:ital,wght@1,300&family=Noto+Serif&display=swap');
+
+
+
+body{
+    background-color: #161A30;
+    padding: 1rem 13rem;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50rem;
+}
+nav h1{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    font-weight: bolder;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    list-style: none;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Mulish";
+}
+.github-link {
+    width: 4.3rem;
+    height: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Mulish";
+    background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
+}
+
+.intro-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0rem;
+}
+
+.left{
+    max-width: 30rem;
+    width: 50%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    gap: 1rem;
+    flex: 1;
+}
+.left h1{
+    font-size: 2rem;
+    background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: "Mulish";
+    flex-shrink: 1;
+}
+
+.left h1 span{
+    color: #fff;
+    font-family: "Mulish";
+    flex-shrink: 1;
+}
+
+.left p{
+    color: #ffffff9b;
+    padding-left: 4px;
+    flex-shrink: 1;
+
+}
+.left a{
+    width: 4.5rem;
+    height: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
+    font-family: "Mulish";
+}
+
+.right{
+    max-width: 30rem;
+    width: 50%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0rem 1rem;
+}
+
+.right img{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+.project-wrapper h1{
+    color: #fff;
+    font-family: "Mulish";
+    font-size: 2rem;
+    font-weight: 900;
+}
+.project{
+    display: flex;
+    width: 100%;
+    height: 17rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 51rem;
+}
+.screen-shot{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen-shot img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    color: #ffffff9b;
+}
+.description h2{
+    color: #fff;
+    font-family: "Mulish";
+    font-size: 1.7rem;
+}
+.description p{
+    font-size: 14px;
+}
+
+.description a{
+    color: #fff;
+}
+.description a:after{
+    content: "  \1f855";
+}
+.about-wrapper{
+    text-align: center;
+    margin: 6rem 0rem;
+    box-sizing: border-box;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.about-wrapper h1{
+    color: #fff;
+    font-family: "Mulish";
+    font-size: 2rem;
+    font-weight: 900;
+}
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.avatar img{
+    height: 6rem;
+    width: 6rem;  
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar small{
+    color: #ffffff9b;
+    font-size: 12px;
+    word-spacing: 2px;
+}
+.about-wrapper p{
+    color: #ffffff9b;
+    
+}
+.about-wrapper a{
+    width: 4.5rem;
+    height: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
+    font-family: "Mulish";
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    text-align: center;
+    font-family: "Mulish";
+}
+.contact-wrapper h1{
+    font-weight: 900;
+}
+.contact-wrapper ul{
+    list-style: none;
+    color: white;
+}
+.media{
+    display: flex;
+    gap: 5rem;
+}
+
+.media div{
+    text-align: center;
+}
+.media div a{
+    text-decoration: none;
+    color: #fff;
+}
+.media div a:hover{
+    color: rgb(22, 22, 247);
+}
+
+@media (max-width: 1000px){
+
+    body{
+        padding: 1rem 0.5rem;
+        font-size: 12px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 0.8rem;
+    }
+    .nav-links ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.4rem;
+        list-style: none;
+    }
+    .intro-wrapper{
+        padding: 2rem 0rem;
+    }
+    .left{
+        text-align: center;
+        gap: 0px;
+    }
+    .left h1{
+        font-size: 1rem;
+    }
+    .left p{
+        font-size: 10px;
+        width: 15rem;
+    }
+    .right{
+        align-items: center;
+    }
+    .right img{
+        height: 7rem;
+        width: 7rem;
+        
+    }
+    .project{
+        height: 12rem;
+        
+    }
+    .description{
+        gap: 0px;
+    }
+    .description h2{
+        font-size: 14px;
+    }
+    .description p{
+        font-size: 10px;
+    }
+    .about-wrapper p{
+        max-width: 45rem;
+    }
+
+}
