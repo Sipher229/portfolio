@@ -82,7 +82,7 @@ nav h1{
 
 .left p{
     color: #ffffff9b;
-    padding-left: 4px;
+    width: 16rem;
     flex-shrink: 1;
 
 }
