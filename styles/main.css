@@ -6,6 +6,7 @@
 body{
     background-color: #161A30;
     padding: 1rem 13rem;
+    height: 100%;
 }
 header{
     display: flex;
@@ -13,10 +14,13 @@ header{
     align-items: center;
 }
 nav{
+    background-color: #161A30;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50rem;
+    width: 56rem;
+    position: relative;
+ 
 }
 nav h1{
     color: #fff;
@@ -36,15 +40,93 @@ nav h1{
 }
 .github-link {
     width: 4.3rem;
-    height: 1.5rem;
+    height: 1.9rem;
     text-decoration: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 10px;
     color: #fff;
     font-family: "Mulish";
     background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
 }
+.github-link:hover{
+    transition: scale 0.1s ease-in-out;
+    scale: 110%;
+}
+
+.menu-button{
+    width: 13rem;
+    height: 2rem;
+    background-color: #161A30;
+    padding: 5px;
+    display: none;
+    /* border: 1px solid rgba(151, 151, 151, 0.952);
+    border-radius: 5px; */
+}
+
+.menu-button .menu-icon1, .menu-button .menu-icon2,
+.menu-button .menu-icon3{
+    width: 1.4rem;
+    height: 2px;
+    background-color: #fff;
+}
+
+.mobile-menu{
+    width: 13rem;
+    height: 12rem;
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 1rem;
+    border: 1px solid rgba(151, 151, 151, 0.952);
+    box-sizing: border-box;
+    background-color: #161A30;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mobile-menu ul{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+.mobile-menu li{
+    list-style-type: none;
+    width: 100%;
+    height: 25%;
+   border-bottom: .5px solid rgba(151, 151, 151, 0.952);;
+    
+}
+.mobile-menu li:hover{
+    background-color: rgb(10, 8, 32);
+    transition: all .3s ease-in-out;
+}
+/* .separator{
+    border: .5px solid rgba(151, 151, 151, 0.952);
+    width: 100%;
+
+} */
+
+.mobile-menu li a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.mobile-menu li a:hover{
+    transform: scale(1.20);
+    transition: all .2s ease;
+}
+
 
 .intro-wrapper{
     display: flex;
@@ -82,20 +164,27 @@ nav h1{
 
 .left p{
     color: #ffffff9b;
-    width: 10rem;
+    padding-left: 4px;
     flex-shrink: 1;
 
 }
 .left a{
-    width: 4.5rem;
-    height: 1.5rem;
+    width: 4.9rem;
+    height: 1.9rem;
     text-decoration: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 10px;
     color: white;
     background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
     font-family: "Mulish";
+
+}
+.left a:hover {
+    transition: scale 0.1s ease-in-out;
+    scale: 110%;
 }
 
 .right{
@@ -119,14 +208,24 @@ nav h1{
 .project-wrapper{
     display: flex;
     flex-direction: column;
+    /* height: 55rem; */
     align-items: center;
     gap: 0.8rem;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
-.project-wrapper h1{
+.project-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+#projects h1{
     color: #fff;
     font-family: "Mulish";
     font-size: 2rem;
     font-weight: 900;
+    text-align: center;
+    background: linear-gradient();
+    margin: 2rem;
 }
 .project{
     display: flex;
@@ -135,10 +234,11 @@ nav h1{
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    max-width: 51rem;
+    /* max-width: 51rem; */
 }
 .screen-shot{
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,6 +250,7 @@ nav h1{
 }
 .description{
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -176,7 +277,7 @@ nav h1{
     text-align: center;
     margin: 6rem 0rem;
     box-sizing: border-box;
-    height: 20rem;
+    height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,16 +313,26 @@ nav h1{
     
 }
 .about-wrapper a{
-    width: 4.5rem;
+    width: 4.9rem;
     height: 1.8rem;
     text-decoration: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 10px;
     color: white;
     background: linear-gradient(90deg, rgb(142, 47, 134) 0%, rgb(84, 111, 203) 39%, rgba(72,224,255,1) 100%);
     font-family: "Mulish";
 }
+.about-wrapper a:hover{
+    scale: 110%;
+    transition: scale 0.1s ease-in-out;
+}
+.about-wrapper a:active{
+    scale: 95%;
+}
+
 .contact-wrapper{
     display: flex;
     flex-direction: column;
@@ -258,24 +369,84 @@ nav h1{
 @media (max-width: 1000px){
 
     body{
-        padding: 1rem 0.5rem;
+        padding: 1rem 1rem;
         font-size: 12px;
     }
 
     nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding-right: 0.8rem;
+        padding: 0.8rem;
+        position: fixed;
+        top: 0rem;
+        width: 38rem;
     }
     .nav-links ul{
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
         gap: 0.4rem;
-        list-style: none;
+        list-style: none; */
+        display: none;
+    }
+    .menu-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+    .menu-button:hover .mobile-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-button:focus-within .mobile-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-button:hover .menu-icon1{
+        transform:  translate(0.8px, 5.3px) rotate(-45Deg);
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-button:hover .menu-icon2{
+        display: none;
+    }
+    .menu-button:hover .menu-icon3{
+        transform:  translate(-0.8px,-5.3px) rotate(45Deg);
+        transition: all 0.3s ease-in-out;
+    }
+    .mobile-menu{
+        transform-origin: top right;
+        animation: showmenu 0.4s ease-in-out forwards;
+
+    }
+
+    @keyframes showmenu {
+        0% {
+            transform: scaleX(0);
+        }
+        25% {
+            transform: scaleX(0.25);
+        }
+        50%{
+            transform: scaleX(0.5);
+        }
+        75%{
+            transform: scaleX(1.10);
+
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
+    }
+    .github-link{
+        display: none;
     }
     .intro-wrapper{
         padding: 2rem 0rem;
+        flex-direction: column-reverse;
+        gap: 0px;
     }
     .left{
         text-align: center;
@@ -286,14 +457,13 @@ nav h1{
     }
     .left p{
         font-size: 10px;
-        width: 15rem;
     }
     .right{
         align-items: center;
     }
     .right img{
-        height: 7rem;
-        width: 7rem;
+        height: 10rem;
+        width: 10rem;
         
     }
     .project{
