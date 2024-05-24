@@ -472,6 +472,7 @@ nav h1{
     }
     .description{
         gap: 0px;
+        overflow-y: scroll;
     }
     .description h2{
         font-size: 14px;
